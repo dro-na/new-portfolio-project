@@ -179,7 +179,6 @@
 
 
             section {
-                margin-bottom: 500px;
                 display: flex;
                 gap: 1em;
 
@@ -235,6 +234,19 @@
                 margin: 0 auto;
                 padding: 3em .5em 0;
             }
+
+
+            .stats-row {
+                .icon {
+                    display: flex;
+                    gap: .5em;
+
+
+                    i{
+                        font-size: 3em;
+                    }
+                }
+            }
         }
     }
 
@@ -248,7 +260,6 @@
         .content-container {
             margin-left: 0;
             width: 100%;
-            padding-top: 3em;
         }
     }
 }
