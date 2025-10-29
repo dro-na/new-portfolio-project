@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Main container styling*/
+.main-container {
+    display: flex;
+
+    .sidenav {
+        padding: 1em 1em;
+        background-color: #040b14;
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        /* transition: all ease-in-out 0.3s; */
+
+        /* the figure contains the image and the image caption */
+        figure {
+            img {
+                height: 7em;
+                border: 10px solid rgba(116, 117, 123, 0.398);
+                ;
+                border-radius: 70px;
+                display: block;
+                margin: 0 auto;
+
+            }
+
+            figcaption {
+                font-weight: 700;
+                font-size: 1.3em;
+                text-align: center;
+                color: white;
+                margin: .5em 0;
+            }
+        }
+
+        .socials-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+
+
+            li {
+                list-style: none;
+                background-color: rgba(116, 117, 123, 0.398);
+                padding: .5em;
+                border-radius: 30px;
+                font-size: .9em;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        /* This section contains the nav buttons */
+        nav {
+            margin: 2em 0;
+            margin-left: 1em;
+            display: flex;
+            flex-flow: column;
+            gap: 2.4em;
+
+            ul li {
+                list-style: none;
+                font-size: 1.2em;
+                font-weight: 350;
+
+                a {
+                    text-decoration: none;
+                    color: #A8A9B4;
+
+                    i {
+                        margin: 0 .5em;
+                        color: #A8A9B4;
+                    }
+
+                }
+
+                a:hover i {
+                    color: rgb(56, 100, 202);
+                }
+            }
+        }
+    }
+
+    .content-container {
+
+        height: 100vh;
+        width: 100%;
+        margin-left: 300px;
+
+        .hero {
+            background-image: url(images/volcano.jpg);
+            display: flex;
+            align-items: center;
+            height: 100vh;
+
+            .hero-text {
+                padding-left: 7em;
+
+
+                h2 {
+                    font-size: 3em;
+                    margin-bottom: .2em;
+
+                }
+
+                p {
+                    font-size: 1.2em;
+                    word-spacing: 10px;
+                    letter-spacing: 5px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.501);
+                    margin-bottom: 10px;
+
+                    .red {
+                        color: rgb(132, 13, 13);
+                        font-style: italic;
+                    }
+
+                    .green {
+                        color: rgb(3, 101, 9);
+                    }
+
+                    .blue {
+                        color: rgb(7, 7, 101);
+                    }
+                }
+            }
+        }
+
+        .about {
+            max-width: 98%;
+            margin: 1em auto 0;
+            padding: 3em .5em 0;
+
+
+
+            .heading {
+                position: relative;
+
+                h2 {
+                    font-size: 2.2em;
+                    
+                }
+
+                div {
+                    margin-top: 1em;
+                    position: absolute;
+                    height: 3px;
+                    background-color: #149DDD;
+                    width: 50px;
+                }
+            }
+
+            .intro-text {
+
+                margin-bottom: 3em;
+
+                p {
+                    margin-top: 2em;
+                }
+            }
+
+
+
+            section {
+                margin-bottom: 500px;
+                display: flex;
+                gap: 1em;
+
+                .img {
+                    padding-top: .5em;
+
+                    img {
+                        height: 20em;
+                    }
+                }
+
+                .details {
+                    h3 {
+                        font-size: 1.6em;
+                        margin-bottom: 1em;
+                    }
+
+                    p {
+                        font-style: italic;
+                        margin-bottom: 1em;
+                    }
+
+                    .list {
+                        display: flex;
+                        gap: 3em;
+                        padding-top: 1em;
+                        padding-bottom: 2em;
+
+
+                        ul {
+                            line-height: 3em;
+                        }
+
+                        ul li {
+                            list-style: none;
+                            font-size: 1em;
+
+                            i {
+                                color: rgb(121, 179, 255);
+                                font-weight: 500;
+                                font-size: 1em;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            @media (min-width: 1500px) {
+                padding-top: 1em;
+                margin-top: 1em;
+                width: 1300px;
+                margin: 0 auto;
+                padding: 3em .5em 0;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .sidenav {
+            display: none;
+            width: 0;
+            left: -300px;
+        }
+
+        .content-container {
+            margin-left: 0;
+            width: 100%;
+            padding-top: 3em;
+        }
+    }
+}
