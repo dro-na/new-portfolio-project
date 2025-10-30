@@ -297,10 +297,8 @@
 .skills {
     width: 100%;
     margin: 1em auto 0;
-    padding: 3em .5em 0;
+    padding: 3em .5em 10em;
     background-color: #f4fafd;
-    border: 2px solid black;
-
 
     .main {
 
@@ -325,9 +323,161 @@
 
         .myIntro {
             margin-top: 2em;
+            padding-bottom: 3em;
 
             p {
                 font-family: arial;
+            }
+        }
+
+        .stats {
+            display: flex;
+            gap: 2em;
+            .text-script-style {
+                display: flex;
+                flex-flow: column;
+                gap: 1.5em;
+                width: 50%;
+
+                .html {
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 1em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #149DDD;
+                    }
+                }
+
+
+                .css {
+
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 1em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #27282933;
+                        
+
+                        .progress{
+                            background-color: #149DDD;
+                            height: 10px;
+                            width: 90%;
+                        }
+                    }
+                }
+                .js {
+
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: .9em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #27282933;
+                        
+
+                        .progress{
+                            background-color: #149DDD;
+                            height: 10px;
+                            width: 75%;
+                        }
+                    }
+                }
+                .php {
+
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: .9em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #27282933;
+                        
+
+                        .progress{
+                            background-color: #149DDD;
+                            height: 10px;
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .wordpress {
+
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: .9em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #27282933;
+                        
+
+                        .progress{
+                            background-color: #149DDD;
+                            height: 10px;
+                            width: 90%;
+                        }
+                    }
+                }
+                .c-draw {
+
+                    span {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: .9em;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .progress-bar {
+                        height: 10px;
+                        background-color: #27282933;
+                        
+
+                        .progress{
+                            background-color: #149DDD;
+                            height: 10px;
+                            width: 50%;
+                        }
+                    }
+                }
             }
         }
     }
