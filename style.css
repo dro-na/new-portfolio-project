@@ -493,7 +493,7 @@
 
  .resume {
 
-     padding-bottom: 20em;
+     padding-bottom: 5em;
 
      .main {
 
@@ -504,6 +504,12 @@
 
 
          .resume-info {
+
+
+
+            div {
+                width: 100%;
+            }
             display: flex;
              .summary {
                  padding-top: 1.5em;
@@ -526,6 +532,7 @@
                              width: 15px;
                              padding: .4em;
                              border-radius: 100%;
+                             background-color: white;
                          }
 
                          .blue-line {
@@ -534,7 +541,25 @@
                              width: 2px;
                              height: 200px;
                              top: 15px;
-                             left: 8px;
+                             left: 7px;
+                         }
+
+
+                         .newblue-line {
+                             position: absolute;
+                             background-color: #149DDD;
+                             width: 2px;
+                             height: 420px;
+                             top: 15px;
+                             left: 7px;
+                         }
+                         .blue-line2 {
+                             position: absolute;
+                             background-color: #149DDD;
+                             width: 2px;
+                             height: 320px;
+                             top: 15px;
+                             left: 7px;
                          }
 
                          .myinfo {
@@ -547,7 +572,7 @@
 
                             ul{
                                 padding: 2em 0  1em 1em;
-                                line-height: 2em;
+                                line-height: 1.6em;
                             }
 
                          }
@@ -558,3 +583,5 @@
          }
      }
  }
+
+
