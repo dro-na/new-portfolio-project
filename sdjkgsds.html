@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Grid container for all image boxes */
+        .portfolio-grid {
+            display: grid;
+            /* use grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            /* make flexible columns */
+            gap: 1rem;
+            /* space between boxes */
+        }
+
+        /* Each image box */
+        .image-box {
+            border: 2px solid black;
+            position: relative;
+            /* needed for overlay to position inside */
+            height: 250px;
+            /* set box height */
+            width: 300px;
+            background-size: cover;
+            /* make image cover the box */
+            background-position: center;
+            /* center the image */
+            overflow: hidden;
+            /* hide anything going outside */
+            border-radius: 10px;
+            /* round the corners */
+            transition: transform 0.4s ease, filter 0.4s ease;
+            /* smooth zoom + darken effect */
+        }
+
+        /* Overlay that sits on top of the image */
+        .overlay {
+            position: absolute;
+            /* place it over the image */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* fill full width */
+            height: 100%;
+            /* fill full height */
+            background: rgba(0, 0, 0, 0.55);
+            /* dark transparent layer */
+            display: flex;
+            /* use flex to center text */
+            align-items: center;
+            /* vertical center */
+            justify-content: center;
+            /* horizontal center */
+            opacity: 0;
+            /* hidden at first */
+            transition: opacity 0.4s ease;
+            /* smooth fade-in */
+        }
+
+        /* The text inside the overlay */
+        .overlay p {
+            color: white;
+            /* make text white */
+            font-size: 1.1em;
+            /* slightly big text */
+            font-weight: 500;
+            /* medium bold */
+            transform: translateY(20px);
+            /* move text slightly down */
+            opacity: 0;
+            /* hidden at first */
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            /* smooth slide + fade */
+        }
+
+        /* When hovering the image box */
+        .image-box:hover {
+            transform: scale(1.07);
+            /* zoom image slightly */
+            filter: brightness(0.7);
+            /* make it a bit darker */
+        }
+
+        /* When hovering, show overlay */
+        .image-box:hover .overlay {
+            opacity: 1;
+            /* fade in overlay */
+        }
+
+        /* When hovering, animate the text */
+        .image-box:hover .overlay p {
+            transform: translateY(0);
+            /* slide text up to normal spot */
+            opacity: 1;
+            /* make text visible */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="portfolio-grid">
+        <div class="image-box" style="background-image: url('images/bookingSite.png')">
+            <div class="overlay">
+                <p>Web Design</p>
+            </div>
+        </div>
+
+        <div class="image-box" style="background-image: url('images/church.jpeg')">
+            <div class="overlay">
+                <p>Brand Identity</p>
+            </div>
+        </div>
+
+        <div class="image-box" style="background-image: url('images/fintech\ apps.png')">
+            <div class="overlay">
+                <p>App UI</p>
+            </div>
+        </div>
+
+        <div class="image-box" style="background-image: url('images/health.jpeg')">
+            <div class="overlay">
+                <p>Illustration</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
