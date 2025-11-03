@@ -670,7 +670,7 @@
                      background-position: center;
                      background-size: 100% 100%;
                      overflow: hidden;
-                     height: 352px;
+                     height: 332px;
                      width: 456px;
                      overflow: hidden;
                      transition: background-size 0.3s ease;
@@ -703,6 +703,7 @@
 
                              & .text {
                                  background-color: #149DDD;
+                                 border-radius: 7px;
                                  color: #fff;
                                  width: 6.5em;
                                  padding: .2em .2em;
