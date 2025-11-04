@@ -593,7 +593,7 @@
 
  .Portfolio {
      background-color: #f4fafd;
-     padding-bottom: 20em;
+     padding-bottom: 5em;
 
      .main {
          .myIntro {
@@ -760,13 +760,59 @@
  }
 
 
- /* 
- .image-box {
-     position: relative;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     background-image: url(images/church.jpeg);
-     height: 20em;
-     width: 250px;
- }  */
+ .services {
+     & .main {
+
+
+         & .myIntro {
+             margin-top: 2em;
+         }
+
+
+         & ._services {
+
+             & .list {
+
+                 & ul {
+                     display: flex;
+
+                     & li {
+                         list-style: none;
+
+                         & a {
+                            text-decoration: none;
+                            & .stats-row {
+                                padding: 1.5em;
+                                & .icon {
+                                    i {
+                                        color: white;
+                                        background-color: #149DDD;
+                                        height: fit-content;
+                                        border-radius: 100%;
+                                        padding: 9px;
+                                        font-size: 1.7em;
+                                        font-weight: lighter;
+                                    }
+
+                                    & .decr{
+                                        & h2 {
+                                            color: rgba(0, 0, 0, 0.76);
+                                            font-size: 1.4em;
+                                        }
+
+                                        & p {
+                                            font-size: .9em;
+                                            color: #000;
+                                            margin-top: 1em;
+                                            font-weight: lighter;
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
