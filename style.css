@@ -16,6 +16,7 @@
  .main-container {
      display: flex;
 
+
      .sidenav {
          padding: 1em 1em;
          background-color: #040b14;
@@ -100,7 +101,7 @@
      }
 
      .content-container {
-
+         overflow-x: hidden;
          height: 100vh;
          width: 100%;
          margin-left: 300px;
@@ -833,3 +834,100 @@
          }
      }
  }
+
+ .Testimonials {
+     padding-bottom: 20em;
+     background-color: #f4fafd;
+
+     & .main {
+         & .myIntro {
+             margin-top: 2em;
+         }
+
+         & .testimonies {
+             padding: 0 1em;
+             max-width: 1350px;
+             margin: 0 auto;
+             display: flex;
+             gap: 2em;
+             padding-top: 2em;
+
+             /* Remove .flip styles from here - it's now relative to each card */
+
+             /* Each card wrapper needs position relative */
+             &>div {
+                 position: relative;
+                 /* This makes .flip position relative to each card */
+             }
+
+             .flip {
+                 position: absolute;
+                 bottom: 165px;
+                 /* Position from bottom instead of top */
+                 left: 50%;
+                 transform: translateX(-50%) rotate(47deg);
+                 /* Center horizontally and rotate */
+                 height: 5em;
+                 width: 5em;
+                 background-color: #fff;
+                 z-index: 1;
+                 box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+             }
+
+             & figure {
+                 margin-top: 3em;
+                 display: flex;
+                 flex-flow: column;
+                 align-items: center;
+                 justify-content: center;
+
+                 img {
+                     height: 6em;
+                     border-radius: 50%;
+                     width: 6em;
+                 }
+
+                 & figcaption {
+                     text-align: center;
+
+                     p {
+                         font-weight: bolder;
+                     }
+
+                     small {
+                         color: gray;
+                         font-size: .8em;
+                         font-weight: bold;
+                     }
+                 }
+             }
+
+             & .testimony-container {
+                 z-index: 2;
+                 position: relative;
+                 background-color: #fff;
+                 width: 100%;
+                 padding: 1.5em;
+                 box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+                 & .text {
+                     opacity: 0.8;
+                     font-weight: 500;
+                     line-height: 1.5em;
+                     text-align: center;
+
+                     & p {
+                         font-style: italic;
+                         z-index: 3;
+
+                         i {
+                             color: #149DDD;
+                             font-size: 1.5em;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
