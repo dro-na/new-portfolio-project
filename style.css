@@ -776,39 +776,56 @@
                  & ul {
                      display: flex;
 
+
+
                      & li {
                          list-style: none;
 
+
+
                          & a {
-                            text-decoration: none;
-                            & .stats-row {
-                                padding: 1.5em;
-                                & .icon {
-                                    i {
-                                        color: white;
-                                        background-color: #149DDD;
-                                        height: fit-content;
-                                        border-radius: 100%;
-                                        padding: 9px;
-                                        font-size: 1.7em;
-                                        font-weight: lighter;
-                                    }
+                             text-decoration: none;
 
-                                    & .decr{
-                                        & h2 {
-                                            color: rgba(0, 0, 0, 0.76);
-                                            font-size: 1.4em;
-                                        }
 
-                                        & p {
-                                            font-size: .9em;
-                                            color: #000;
-                                            margin-top: 1em;
-                                            font-weight: lighter;
-                                        }
-                                    }
-                                }
-                            }
+                             &:hover .stats-row .icon i {
+                                 background-color: white;
+                                 color: #149DDD;
+                                 border: 1px solid #149DDD;
+                                 transition: 0.4s ease-in-out;
+                             }
+
+                             & .stats-row {
+                                 padding: 1.5em;
+
+
+                                 & .icon {
+                                     i {
+                                         color: white;
+                                         background-color: #149DDD;
+                                         height: fit-content;
+                                         border-radius: 100%;
+                                         padding: 9px;
+                                         font-size: 1.7em;
+                                         font-weight: lighter;
+                                     }
+
+
+
+                                     & .decr {
+                                         & h2 {
+                                             color: rgba(0, 0, 0, 0.76);
+                                             font-size: 1.4em;
+                                         }
+
+                                         & p {
+                                             font-size: .9em;
+                                             color: #000;
+                                             margin-top: 1em;
+                                             font-weight: lighter;
+                                         }
+                                     }
+                                 }
+                             }
                          }
                      }
                  }
