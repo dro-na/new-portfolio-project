@@ -118,6 +118,7 @@
              align-items: center;
              height: 100vh;
 
+
              .hero-text {
                  padding-left: 7em;
 
@@ -125,6 +126,11 @@
                  h2 {
                      font-size: 3em;
                      margin-bottom: .2em;
+
+                     @media (max-width: 800px) {
+                         font-size: 1.5em;
+                         padding-bottom: 1em;
+                     }
 
                  }
 
@@ -188,6 +194,7 @@
 
 
 
+
              section {
                  display: flex;
                  gap: 1em;
@@ -234,6 +241,27 @@
                          }
 
                      }
+
+                 }
+
+                 @media (max-width: 800px) {
+                     .list {
+                         display: flex;
+                         flex-direction: column;
+                         gap: 0 !important;
+                     }
+
+                     ul {
+                         line-height: 1em;
+                     }
+                 }
+
+             }
+
+             @media (max-width: 900px) {
+                 section {
+                     display: flex;
+                     flex-direction: column;
                  }
              }
 
@@ -246,12 +274,15 @@
              }
 
 
-             .stats-row {
 
+             .stats-row {
                  padding: 5em 0;
                  display: flex;
                  flex-flow: row;
                  justify-content: space-between;
+                 width: 100%;
+
+
 
                  .icon {
                      display: flex;
@@ -281,6 +312,21 @@
                              color: gray;
                          }
                      }
+                 }
+             }
+
+             @media (max-width: 800px) {
+                 .stats-row {
+                     padding-top: 2em;
+                     display: flex;
+                     flex-direction: column;
+                     gap: 2em;
+                 }
+
+                 .icon {
+                     width: 400px;
+                     border: 2px solid rgba(0, 0, 0, 0.075);
+                     padding: .5em;
                  }
              }
          }
@@ -348,7 +394,7 @@
                  display: flex;
                  flex-flow: column;
                  gap: 1.5em;
-                 width: 50%;
+                 width: 100%;
 
                  .html {
                      span {
@@ -495,6 +541,13 @@
              }
          }
      }
+
+     @media (max-width: 800px) {
+         .stats {
+             display: flex;
+             flex-direction: column;
+         }
+     }
  }
 
 
@@ -510,16 +563,22 @@
              margin-top: 3em;
          }
 
+         @media (max-width: 800px) {
+             .resume-info {
+                 display: flex;
+                 flex-direction: column;
+             }
+         }
+
 
          .resume-info {
+             display: flex;
 
 
 
              div {
                  width: 100%;
              }
-
-             display: flex;
 
              .summary {
                  padding-top: 1.5em;
@@ -639,11 +698,22 @@
              }
          }
 
+
+
          .portfolio-image-container {
              margin-top: 2em;
              display: flex;
              flex-flow: column;
              gap: 1em;
+
+
+             @media (max-width: 800px) {
+
+                 .image-container {
+                     display: flex;
+                     flex-flow: column;
+                 }
+             }
 
 
              .image-container {
@@ -682,6 +752,12 @@
                      overflow: hidden;
                      transition: background-size 0.3s ease;
                      background-color: rgba(0, 0, 0, 0.151);
+
+
+                     @media (max-width: 800px) {
+                         width: 90%;
+                         margin: 0 auto;
+                     }
 
 
 
@@ -780,6 +856,13 @@
 
              & .list {
 
+                 @media (max-width: 800px) {
+                     ul {
+                         display: flex;
+                         flex-direction: column;
+                     }
+                 }
+
                  & ul {
                      display: flex;
 
@@ -850,6 +933,13 @@
              margin-top: 2em;
          }
 
+         @media (max-width: 800px) {
+             .testimonies {
+                 display: flex;
+                 flex-direction: column;
+             }
+         }
+
          & .testimonies {
              padding: 0 1em;
              max-width: 1350px;
@@ -861,6 +951,12 @@
              & div {
                  position: relative;
 
+             }
+
+             @media (max-width: 800px) {
+                 .none {
+                     display: none;
+                 }
              }
 
              .flip {
@@ -935,10 +1031,21 @@
  }
 
  .contact {
+     @media (max-width: 800px) {
+         .contact-container {
+             display: flex;
+             flex-direction: column;
+         }
+     }
+
 
      padding-bottom: 2em;
 
      & .main {
+
+         @media (max-width: 800px) {
+             padding-left: 2em !important;
+         }
 
          & .myIntro {
              margin-top: 2em;
@@ -947,6 +1054,12 @@
          & .contact-container {
              display: flex;
              gap: 1.5em;
+
+             @media (max-width: 800px) {
+                 .message-container {
+                     width: 90% !important;
+                 }
+             }
 
 
 
@@ -1082,8 +1195,26 @@
                          padding: .5em;
                          border: none;
                          font-weight: bold;
+                         cursor: pointer;
 
                      }
+
+                     & button:hover {
+                         border: 1px solid #149DDD;
+                         background-color: transparent;
+                         color: #149DDD;
+                         transition: 0.4s ease-in-out;
+                     }
+
+
+
+                 }
+             }
+
+             @media (max-width: 800px) {
+                 .adddres {
+                     width: 90% !important;
+
 
                  }
              }
