@@ -60,12 +60,17 @@
              li {
                  list-style: none;
                  background-color: rgba(116, 117, 123, 0.398);
-                 padding: 1em;
                  border-radius: 30px;
-                 font-size: .9em;
+
+
+
 
                  a {
                      color: white;
+                     display: inline-block;
+                     font-size: .9em;
+                     padding: 1em;
+                     border-radius: 30px;
                  }
              }
 
@@ -129,7 +134,7 @@
              .hero-text {
                  padding-left: 7em;
                  background-color: #a8a9b45e;
-                 
+
                  width: 100%;
                  padding: 10em 0;
 
