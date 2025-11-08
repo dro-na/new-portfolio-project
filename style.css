@@ -121,6 +121,7 @@
 
 
 
+
          .hero {
              background-image: url(images/tech2.avif);
              display: flex;
@@ -132,9 +133,8 @@
 
 
              .hero-text {
-                 padding-left: 7em;
+                 padding-left: 2em !important;
                  background-color: #a8a9b45e;
-
                  width: 100%;
                  padding: 10em 0;
 
