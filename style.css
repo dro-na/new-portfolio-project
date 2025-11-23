@@ -129,6 +129,44 @@
              height: 100vh;
              background-repeat: no-repeat;
              background-size: cover;
+             position: relative;
+
+
+             /*STYLING THE ONCLICK BUTTON*/
+             .navBtn {
+                 display: none;
+             }
+
+             @media (max-width: 1200px) {
+                 .navBtn {
+                     display: flex;
+
+                     .jsBtn {
+                         margin-top: .5em;
+                         margin-right: 1em;
+                         padding: .5em;
+                         background: rgb(68, 69, 70);
+                         border: 1px solid white;
+                         position: absolute;
+                         top: 0;
+                         right: 0;
+
+                         svg {
+                             width: 3em;
+                             height: 3em;
+                         }
+
+
+                         .nav-open {
+                             display: block;
+                         }
+
+                         .nav-close {
+                             display: none;
+                         }
+                     }
+                 }
+             }
 
 
 
@@ -365,11 +403,22 @@
          }
      }
 
-     @media (max-width: 1200px) {
+
+     /* HIDE SIDE NAV*/
+ }
+
+ @media(max-width: 1200px) {
+     .main-container {
          .sidenav {
-             display: none;
-             width: 0;
+             z-index: 9999;
+             position: fixed;
              left: -300px;
+             transition: .5s;
+
+         }
+
+         &.active .sidenav {
+             left: 0;
          }
 
          .content-container {
@@ -379,6 +428,10 @@
      }
 
  }
+
+
+
+
 
 
  .skills {
